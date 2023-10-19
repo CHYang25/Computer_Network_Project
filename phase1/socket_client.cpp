@@ -21,7 +21,7 @@ int main(int argc, char **argv)
     char msg[512];
     printf("Enter your message: ");
     fgets(msg, sizeof(msg), stdin);
-    msg[sizeof(msg)-1] = '\0';
+    msg[sizeof(msg)-2] = '\0';
     // scanf("%s", msg);
 
     // write message

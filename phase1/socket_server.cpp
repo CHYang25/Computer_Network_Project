@@ -70,7 +70,6 @@ int main(int argc, char **argv)
     read(req_cli.conn_fd, req_cli.buf, 512);
     printf("Client request: %s\n", req_cli.buf);
 
-    req_cli.buf[sizeof(req_cli.buf)-2] = '\0';
     strcat(req_cli.buf, "| message sent");
     write(req_cli.conn_fd, req_cli.buf, sizeof(req_cli.buf));
 
