@@ -1,31 +1,4 @@
-#include <unistd.h>
-#include <poll.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdint.h>
-#include <errno.h>
-#include <sys/socket.h>
-#include <fcntl.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <netdb.h>
-#include <sys/select.h>
-
-typedef struct {
-    char hostname[512];
-    uint16_t port;
-    int listen_fd;
-} Server;
-
-typedef struct {
-    char host[512];  // client's host
-    int conn_fd;  // fd to talk with client
-    char buf[512];  // data sent by/to client
-    size_t buf_len;  // bytes used by buf
-    int id;
-    int wait_for_write;  
-} Request;
+#include "socket_sc.hpp"
 
 Server srv;
 Request *requests = NULL; // this table is used for phase 2 project
@@ -81,11 +54,13 @@ static void init_server(uint16_t port)
 
 int main(int argc, char **argv)
 {
+    if(argc != 2) ERR_MSG("there should be 2 arguments");
+    
     struct sockaddr_in cliaddr;
     int clilen;
 
     Request req_cli;
-    init_server(8087);
+    init_server(atoi(argv[1])); // argv[1] is the port number
 
     fprintf(stderr, "\nstarting on %.80s, port %d, fd %d, maxconn %d...\n", srv.hostname, srv.port, srv.listen_fd, maxfd);
     if((req_cli.conn_fd = accept(srv.listen_fd, (struct sockaddr*)&cliaddr, (socklen_t*)&clilen)) < 0){
