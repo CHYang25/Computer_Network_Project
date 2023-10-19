@@ -20,12 +20,15 @@ int main(int argc, char **argv)
     // read message
     char msg[512];
     printf("Enter your message: ");
-    scanf("%s", msg);
+    fgets(msg, sizeof(msg), stdin);
+    msg[sizeof(msg)-1] = '\0';
+    // scanf("%s", msg);
 
     // write message
     write(req_cli.conn_fd, msg, strlen(msg));
-    ERR_MSG("message sent");
 
+    read(req_cli.conn_fd, msg, sizeof(msg));
+    printf("Server reply: %s\n", msg);
     // close connection file descriptor
     close(req_cli.conn_fd);
     return 0;

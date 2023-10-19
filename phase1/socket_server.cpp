@@ -68,7 +68,10 @@ int main(int argc, char **argv)
     }
 
     read(req_cli.conn_fd, req_cli.buf, 512);
-    printf("%s\n", req_cli.buf);
+    printf("Client request: %s\n", req_cli.buf);
+
+    strcat(req_cli.buf, "| message sent");
+    write(req_cli.conn_fd, req_cli.buf, sizeof(req_cli.buf));
 
     close(req_cli.conn_fd);
     shutdown(srv.listen_fd, SHUT_RDWR);
