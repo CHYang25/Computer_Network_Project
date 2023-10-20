@@ -14,21 +14,11 @@ int main(int argc, char **argv)
     serv_addr.sin_port = htons(atoi(argv[2])); // argv[2] is the port number
     inet_aton(argv[1], (in_addr*)&serv_addr.sin_addr.s_addr); // argv[1] is the server's IP
 
-    if(connect(req_cli.fd, (struct sockaddr*)&serv_addr, sizeof(serv_addr)) < 0)
-        ERR_MSG("connection error")
+    req_cli.connection_socket((struct sockaddr*)&serv_addr, sizeof(serv_addr));
 
-    // read message
+    // read message from terminal
     char msg[512];
-    printf("Enter your message: ");
-    fgets(msg, sizeof(msg), stdin);
-    msg[strlen(msg)-1] = '\0';
-    // scanf("%s", msg);
-
-    // write message
-    write(req_cli.fd, msg, strlen(msg));
-
-    read(req_cli.fd, msg, sizeof(msg));
-    printf("Server reply: %s\n", msg);
+    req_cli.read_terminal_respond(msg);
     // close connection file descriptor
     close(req_cli.fd);
     return 0;
