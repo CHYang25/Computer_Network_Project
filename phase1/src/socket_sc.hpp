@@ -16,12 +16,12 @@
 typedef struct {
     char hostname[512];
     uint16_t port;
-    int listen_fd;
+    int fd;
 } Server;
 
 typedef struct {
     char host[512];  // client's host
-    int conn_fd;  // fd to talk with client
+    int fd;  // fd to talk with client
     char buf[512];  // data sent by/to client
     size_t buf_len;  // bytes used by buf
     int id;
