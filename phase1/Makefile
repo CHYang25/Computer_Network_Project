@@ -1,3 +1,3 @@
 all:
-	g++ socket_server.cpp -o server
-	g++ socket_client.cpp -o client
+	g++ ./src/socket_server.cpp -o server
+	g++ ./src/socket_client.cpp -o client
