@@ -6,6 +6,7 @@ This is the directory structure of this pacakge:
 ```
 phase1
 ├── client
+├── demo.webm
 ├── Makefile
 ├── README.md
 ├── run.sh
@@ -21,9 +22,10 @@ phase1
 4. ```run.sh```: The script file for execution.
 5. ```README.md```: It describes the package in detail.
 6. ```src```: The directory contains the source files:
-    - ```socket_client.cpp```: client source file
-    - ```socket_server.cpp```: server source file
-    - ```socket_sc.hpp```: the header file
+    - ```socket_client.cpp```: client source file.
+    - ```socket_server.cpp```: server source file.
+    - ```socket_sc.hpp```: the header file.
+7. ```demo.webm```: Demo video.
 
 ## Execution
 ### Compile
