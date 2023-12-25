@@ -1,0 +1,166 @@
+[
+    {
+        "category": "Soccer",
+        "comments": [
+            {
+                "user123": "Great insights into the strategic aspects of soccer!"
+            },
+            {
+                "soccerfan89": "I love how this article captures the essence of the sport."
+            },
+            {
+                "t": "cool"
+            }
+        ],
+        "content": "Soccer, known for its global appeal, showcases the beautiful amalgamation of skillful footwork, strategic teamwork, and intense competition. From the dazzling dribbles to the perfectly executed passes, soccer embodies the artistry of athleticism...",
+        "id": "1",
+        "title": "The Art of Soccer: A Blend of Skill and Strategy"
+    },
+    {
+        "category": "Formula 1",
+        "comments": [
+            {
+                "speedracer": "I'm always amazed by the precision of F1 drivers!"
+            },
+            {
+                "racingenthusiast": "The drama in each race keeps me hooked."
+            }
+        ],
+        "content": "Formula 1 racing, with its high-speed battles on tracks around the world, represents the pinnacle of motorsport excellence. The roaring engines, lightning-fast pit stops, and hairpin turns create an adrenaline-fueled spectacle...",
+        "id": "2",
+        "title": "The Thrilling World of Formula 1 Racing: Speed, Precision, and Drama"
+    },
+    {
+        "category": "Basketball",
+        "comments": [
+            {
+                "hoopsguru": "Interesting perspective on the evolution of basketball tactics."
+            },
+            {
+                "bballfanatic": "The shift to positionless play has really changed the game!"
+            }
+        ],
+        "content": "Basketball, a sport born in the late 19th century, has continually transformed over the years. Its evolution isn’t solely confined to the physical abilities of the players or the development of high-flying dunks. Rather, a significant aspect lies in the strategic evolution...",
+        "id": "3",
+        "title": "Basketball's Evolution in Strategy: From Set Plays to Dynamic Adaptation"
+    },
+    {
+        "category": "Tennis",
+        "comments": [
+            {
+                "tennislover23": "Love how this article breaks down the tactics behind each point!"
+            },
+            {
+                "aceplayer": "Tennis strategy is underrated but crucial in every match."
+            }
+        ],
+        "content": "Tennis, a game of finesse and power, involves a delicate balance of strategy and skill. From the thunderous serves to the precise volleys, every move on the court is a calculated tactical decision. Players strategically maneuver, analyzing their opponent's weaknesses and capitalizing on fleeting opportunities...",
+        "id": "4",
+        "title": "Tennis Tactics: Unraveling the Strategic Moves on the Court"
+    },
+    {
+        "category": "Golf",
+        "comments": [
+            {
+                "golfenthusiast": "The mental side of golf is so crucial and often overlooked."
+            },
+            {
+                "puttingpro": "This article really highlights the psychology behind each shot."
+            }
+        ],
+        "content": "Golf, often seen as a test of mental fortitude as much as physical skill, demands strategic thinking and focus. Beyond the swing and putt, golfers navigate the course with meticulous planning, adjusting their strategies based on wind, terrain, and hazards. The mental aspect, from decision-making to resilience, often determines success on the greens...",
+        "id": "5",
+        "title": "Golf's Mental Game: Strategies for Success Beyond the Swing"
+    },
+    {
+        "category": "Boxing",
+        "comments": [
+            {
+                "boxingfanatic": "Boxing strategy is fascinating, it's not just about strength."
+            },
+            {
+                "fightanalyst": "The mental game in boxing is as important as the physical."
+            }
+        ],
+        "content": "Boxing, known as the sweet science, involves a tactical chess match between two fighters in the ring. It's not merely about throwing punches but strategically outmaneuvering opponents. Boxers analyze movement, feint to deceive, and strategically time their attacks and defensive maneuvers...",
+        "id": "6",
+        "title": "The Tactical Chess Match of Boxing: Strategies Inside the Ring"
+    },
+    {
+        "category": "NFL",
+        "comments": [
+            {
+                "footballbuff": "The strategy behind each play in football is incredible!"
+            },
+            {
+                "gridironguru": "This article sheds light on the mind games within the game."
+            }
+        ],
+        "content": "NFL football, a collision of strength and strategy, revolves around precise play calling and strategic adaptation. Coaches meticulously design plays, quarterbacks read defenses, and teams adjust strategies on the fly. It's a game of chess played at lightning speed on the gridiron...",
+        "id": "7",
+        "title": "Strategic Maneuvers in NFL Football: Play Calling and Adaptation"
+    },
+    {
+        "category": "Rugby",
+        "comments": [
+            {
+                "rugbyfanatic": "Rugby tactics are so diverse and interesting to analyze."
+            },
+            {
+                "scrummaster": "Love the tactics breakdown in this article!"
+            }
+        ],
+        "content": "Rugby, a sport celebrated for its physicality and intensity, is also a game of strategic maneuvering. From scrums to lineouts, teams employ intricate strategies to gain territorial advantage and create scoring opportunities. Each play is a strategic move in the larger chess match on the field...",
+        "id": "8",
+        "title": "The Tactical Edge in Rugby: Physicality Meets Strategic Plays"
+    },
+    {
+        "category": "Swimming",
+        "comments": [
+            {
+                "swimchamp": "Swimming strategy is just as important as physical ability."
+            },
+            {
+                "aquaticfan": "This article gave me insights into the technical side of swimming."
+            },
+            {
+                "Chrisssss": "Amazing"
+            },
+            {
+                "Chrisssss": "Amazing"
+            },
+            {
+                "Chrisssss": "Amazing"
+            }
+        ],
+        "content": "Olympic swimming events, showcasing the pinnacle of aquatic athleticism, involve more than sheer speed. Swimmers strategize their race approaches, employing techniques to maximize efficiency and conserve energy. From pacing to stroke selection, strategic decisions often determine podium finishes...",
+        "id": "9",
+        "title": "Strategic Approaches in Olympic Swimming: Race Tactics and Technique"
+    },
+    {
+        "category": "Running",
+        "comments": [
+            {
+                "runningenthusiast": "The mental aspect of marathon running is truly fascinating!"
+            },
+            {
+                "marathonlover": "This article inspired me to train smarter for my next race."
+            },
+            {
+                "Chrisssss": "This is so cool"
+            },
+            {
+                "happyboy": "I'm handsome"
+            },
+            {
+                "happyboy": "I'm handsome"
+            },
+            {
+                "happyboy": "I'm handsome"
+            }
+        ],
+        "content": "Marathon running, a test of endurance and mental strength, requires strategic approaches beyond physical fitness. Runners pace themselves, plan fuel intake, and employ mental tactics to push through the grueling miles. The strategic mindset often separates champions from the rest...",
+        "id": "10",
+        "title": "Mental Game in Marathon Running: Strategies for Long-Distance Success"
+    }
+]

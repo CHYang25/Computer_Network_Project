@@ -1,0 +1,4 @@
+/home/chyang/workspace/CN/Computer_Network_Project/phase2/CMakeFiles/phase2.dir
+/home/chyang/workspace/CN/Computer_Network_Project/phase2/CMakeFiles/server.dir
+/home/chyang/workspace/CN/Computer_Network_Project/phase2/CMakeFiles/edit_cache.dir
+/home/chyang/workspace/CN/Computer_Network_Project/phase2/CMakeFiles/rebuild_cache.dir
