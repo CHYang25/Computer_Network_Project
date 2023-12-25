@@ -200,7 +200,7 @@ void Client::http_communication_procedure(){
 
                 // wirte back new user data
                 std::string all_user_info_buf = all_user_info.dump(4);
-                std::ofstream all_user_info_o("/home/chyang/workspace/CN/Computer_Network_Project/phase2/database/metadata/user.json");
+                std::ofstream all_user_info_o("./database/metadata/user.json");
                 all_user_info_o.write(all_user_info_buf.c_str(), all_user_info_buf.length());
                 all_user_info_o.close();
             }
@@ -286,7 +286,7 @@ void Client::http_communication_procedure(){
 int main(){
     Server srv = Server();
     Client cli = Client();
-    all_user_info_f = std::ifstream("/home/chyang/workspace/CN/Computer_Network_Project/phase2/database/metadata/user.json");
+    all_user_info_f = std::ifstream("./database/metadata/user.json");
     all_user_info = json::parse(all_user_info_f);
 
     while(true){

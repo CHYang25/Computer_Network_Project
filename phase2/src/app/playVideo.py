@@ -12,8 +12,8 @@ def timg_playVideo():
 
 def ps_playSound():
     time.sleep(1.5)
-    ps("/home/chyang/workspace/CN/Computer_Network_Project/phase2/database/media/tmp_audio.mp3")
-    os.remove("/home/chyang/workspace/CN/Computer_Network_Project/phase2/database/media/tmp_audio.mp3")
+    ps("./database/media/tmp_audio.mp3")
+    os.remove("./database/media/tmp_audio.mp3")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

@@ -39,7 +39,7 @@ def showVideo(root=None):
             playButton.setText(pause_text)
         playing = not playing
         # opens a new terminal to play the video
-        os.system(f"gnome-terminal -- python3 /home/chyang/workspace/CN/Computer_Network_Project/phase2/src/app/playVideo.py -u {url}")
+        os.system(f"gnome-terminal -- python3 ./src/app/playVideo.py -u {url}")
 
         if playing:
             playButton.setText(play_text)
