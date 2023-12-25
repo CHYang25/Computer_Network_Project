@@ -41,8 +41,8 @@ from video import showVideo
 from audio import showAudio
 import socket
 
-HOST = "127.0.0.1"
-PORT = 8087
+HOST = ""
+PORT = 0
 
 def demoShowcase(root=None, border=True, uname=None, sc=None):
     splitter = ttk.TTkSplitter()
@@ -145,12 +145,7 @@ def demoShowcase(root=None, border=True, uname=None, sc=None):
 
     return splitter
 
-def main(uname, sc):
-    parser = argparse.ArgumentParser()
-    parser.add_argument('-f', help='Full Screen (default)', action='store_true')
-    parser.add_argument('-w', help='Windowed',    action='store_true')
-    parser.add_argument('-t', help='Track Mouse', action='store_true')
-    args = parser.parse_args()
+def main(uname, sc, args):    
     windowed = args.w
     mouseTrack = args.t
 
@@ -168,8 +163,19 @@ def main(uname, sc):
 
 if __name__ == "__main__":
     # use socket to obtain tcp connection first
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-f', help='Full Screen (default)', action='store_true')
+    parser.add_argument('-w', help='Windowed',    action='store_true')
+    parser.add_argument('-t', help='Track Mouse', action='store_true')
+    parser.add_argument('--host', help='Host IP', type=str)
+    parser.add_argument('--port', help='Port Number', type=int)
+    args = parser.parse_args()
+
+    HOST = args.host
+    PORT = args.port
+
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((HOST, PORT))
     
     uname = loginFullProcedure(socket=s)
-    main(uname, s)
+    main(uname, s, args)

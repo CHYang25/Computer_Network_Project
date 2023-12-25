@@ -25,7 +25,6 @@
 #include <cassert>
 #include <cstring>
 #define ERR_MSG(msg) fprintf(stderr, "%s\n", msg);
-#define PORT_NUMBER 8087
 
 // #define 
 
@@ -44,7 +43,7 @@ class Server{
         int fd;
         struct sockaddr_in servaddr;
         std::set<pid_t> child_pid;
-        Server();
+        Server(int port_number);
         int accept_client(Client &cli);
         void add_child_pid(pid_t pid);
         void check_child_termination();

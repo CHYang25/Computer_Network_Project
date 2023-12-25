@@ -7,9 +7,9 @@ using json = nlohmann::json;
 json all_user_info;
 std::ifstream all_user_info_f;
 
-Server::Server(){
+Server::Server(int port_number){
     gethostname(this->server_host_name, sizeof(this->server_host_name));
-    this->port = PORT_NUMBER;
+    this->port = port_number;
 
     // initialize the file descriptor for socket tcp connection
     this->fd = socket(AF_INET, SOCK_STREAM, 0);
@@ -283,8 +283,13 @@ void Client::http_communication_procedure(){
     }
 }
 
-int main(){
-    Server srv = Server();
+int main(int argc, char **argv){
+    if(argc < 2){
+        std::cerr << "Please specify the port number\n";
+        return 0;
+    }
+
+    Server srv = Server(atoi(argv[1]));
     Client cli = Client();
     all_user_info_f = std::ifstream("./database/metadata/user.json");
     all_user_info = json::parse(all_user_info_f);
